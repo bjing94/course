@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="main.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
 </head>
+
 <body>
+    <script defer src="js/script.js"></script>
+
     <div class="header">
-        
+
         <p class="centeredText">Gachibass! Jebroni.</p>
+        <button class="sexyButtonSidebar"></button>
+
+        <div class="custom-select-wrapper">
+            <div class="custom-select">
+                <div class="custom-select__trigger"><span>Кукушка</span>
+                    <div class="arrow"></div>
+                </div>
+                <div id="music_options" class="custom-options">
+                    <span class="custom-option selected" data-value="cockusha.wav">Кукушка</span>
+                    <span class="custom-option" data-value="Doll.wav">Кукла колдуна</span>
+                    <span class="custom-option" data-value="song.wav">Танец злобного гения</span>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <div class="headerShadow">
 
     </div>
-    <div class="mainBody">
+    <div class="mainBody" id="mainPart">
+
         <audio id="mainSong" preload="auto" autobuffer src="song.wav">
-                
         </audio>
         <img id="playButton" class="playButtonStyle" src="playButton.png">
         <img id="stopButton" class="playButtonStyle" style="opacity: 0;z-index: 0;" src="stopButton.png">
     </div>
-    
+    <div class="sexySideBar">
+        <a1 class="sexyInteractiveText">What is gachibass?</a1>
+        <br>
+        <a1 class="sexyInteractiveText">Hello2</a1>
+    </div>
+    <div class="sexyPanel" id="firstPanel" style="top:950px;z-index:0">
+        <div class="sexyPanelTextBox">Почему я? А почему бы и нет. Вот почему нет. Мог быть не я, а буду я. Да.</div>
+        <div class="sexyPanelIMG"></div>
 
-    <script src="js/script.js"></script>
+    </div>
+    <div data-current="3" class="sexyPanel" style="top:1350px;background-color: cornsilk;">
+        <div class="sexyPanelTextBox" style="color:dimgrey">Our daddy told us not to be ashamed of our dicks!</div>
+    </div>
+    <div class="sexyPanel" style="top:1750px;background-color:grey;z-index:0">
+        <div class="sexyPanelTextBox" style="color:honeydew">Our daddy told us not to be ashamed of our dicks!</div>
+    </div>
+
 </body>
+
 </html>
